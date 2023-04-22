@@ -8,7 +8,7 @@ CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE
 
 # Configure Postgres database based on connection string of the libpq Keyword/Value form
 # https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING
-conn_str = 'djieqkhzsp Thong158.* thomastruong158-server.postgres.database.azure.com thomastruong158-database'
+conn_str = 'user=djieqkhzsp password=Thong158.* host=thomastruong158-server.postgres.database.azure.com dbname=thomastruong158-database'
 conn_str_params = {pair.split('=')[0]: pair.split('=')[1] for pair in conn_str.split(' ')}
 
 DATABASE_URI = 'postgresql+psycopg2://{dbuser}:{dbpass}@{dbhost}/{dbname}'.format(
