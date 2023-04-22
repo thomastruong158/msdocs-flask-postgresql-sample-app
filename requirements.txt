@@ -5,3 +5,7 @@ flask_wtf
 psycopg2
 python-dotenv
 SQLAlchemy
+psycopg2-binary
+python-dotenv
+flask_wtf
+flask_migrate
